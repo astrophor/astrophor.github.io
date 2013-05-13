@@ -1,4 +1,8 @@
-astrophor.github.io
+astrophor's personal homepage
 ===================
 
-my blog web site
+include these items:
+
+* daily blogs
+* codes on github
+* about me
