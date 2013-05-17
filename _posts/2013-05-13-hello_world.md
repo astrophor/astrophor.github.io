@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: hello, world
-category: life
+categories: [life, thought]
 ---
 
 

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: astrophor
+title: travel
 ---
 
 
 <h2>{{ page.title }}</h2>
 　<p>文章列表</p>
 　<ul>
-　　{% for post in site.categories.topcoder %}
+　　{% for post in site.categories.travel %}
 　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
 　　{% endfor %}
 </ul>
