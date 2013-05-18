@@ -1,12 +1,8 @@
 ---
 layout: post 
-title: hello, world
+title: "first blog"
 categories: [life, thought]
 ---
-
-
-first blog
-=
 
 hello, world !
 
