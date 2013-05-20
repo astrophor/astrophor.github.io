@@ -26,10 +26,8 @@ code {
   color: #333333;
 }
 
-
 .highlight pre {background-color: #505050;}
 .highlight pre code{color: white;}
-
 
 /* timeline css */
 #timeline-navbar {
