@@ -20,6 +20,17 @@ body {
     text-align: center;
 }
 
+code {
+  background-color: #D0D0D0;
+  font-size: 12px;
+  color: #333333;
+}
+
+
+.highlight pre {background-color: #505050;}
+.highlight pre code{color: white;}
+
+
 /* timeline css */
 #timeline-navbar {
   margin-top: 35px;
