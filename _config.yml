@@ -1,3 +1,4 @@
 pygments: true
 markdown: rdiscount
-permalink: none
+permalink: pretty
+
