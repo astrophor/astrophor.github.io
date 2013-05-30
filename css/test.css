@@ -29,6 +29,45 @@ code {
 .highlight pre {background-color: #505050;}
 .highlight pre code{color: white;}
 
+/* sidebar css */
+#sidebar {
+  float:left;
+  margin-left:24px;
+  padding:14px;
+}
+
+#sidebar ul{
+  margin-left: 0;
+  list-style: none;
+}
+
+#sidebar li{
+  background: url(/image/arrow-bullet.gif) no-repeat left top;
+  padding-left:12px;
+}
+
+#sidebar #primary-sidebar {
+  float: left;
+}
+
+#sidebar #secondary-sidebar {
+  float: left;
+  width: 173px;
+}
+
+.widget {
+  margin-bottom:18px;
+  overflow:hidden;
+  width:100%;
+}
+
+h2.widget-title,
+.widget_search label {
+  font-size: 1.16666667em; /* 14 */
+  line-height: 1.28571429;
+  margin: 0 0 .58333334em 0;
+}
+
 /* timeline css */
 #timeline-navbar {
   margin-top: 35px;
