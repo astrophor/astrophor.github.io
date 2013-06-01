@@ -10,7 +10,7 @@
     	<link href="/css/pygments.css" rel="stylesheet" media="screen">
     	<script src="/js/jquery-1.9.1.min.js"></script>
     	<script src="/js/bootstrap.min.js"></script>
-    	<script src="js/timeline.js"></script>
+    	<script src="/js/timeline.js"></script>
 	</head>
 	<body>
 
@@ -30,7 +30,7 @@
                                     <ul>
                                         {% for post in site.posts limit:10 %}
                                         <li>
-                                            <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark"><h6>{{ post.title }}</h6></a>
+                                            <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                                         </li>
                                         {% endfor %}
                                     </ul>

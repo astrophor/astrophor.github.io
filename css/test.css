@@ -1,4 +1,21 @@
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+hr{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 body {
 	background-color: #eee;
 }
@@ -26,8 +43,81 @@ code {
   color: #333333;
 }
 
+a:focus,
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a {
+  color: #a00004;
+}
+
 .highlight pre {background-color: #505050;}
 .highlight pre code{color: white;}
+
+/* main body css */
+.entry {
+  clear:both;
+  margin-top: 18px;
+  margin-left: 55px;
+  margin-bottom: 24px;
+}
+
+.entry-title {
+  font-size: 1.50em;
+}
+
+.entry-title a {
+  color: #51555c;
+}
+
+.entry-date {
+  float: left;
+  margin-left: -55px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.entry-date div {
+  font-size: 20px;
+  color: #175158;
+}
+
+.entry-content {
+  padding-bottom: 20px;
+}
+
+.read_more {
+  float: right;
+}
+
+.alt-font {
+  color: #999;
+  font-family: Georgia, Palatino, "Palatino Linotype", Baskerville, serif;
+  font-style:italic;
+}
+
+.alt-font span {
+  font-family:helvetica, arial, sans-serif;
+  font-style:normal;
+  color: #a00004;
+}
+
+.comments-link {
+  float:right;
+}
+
+.rule {
+  background-image:url(../image/divider-ornament.gif);
+  background-color:#fff;
+  background-repeat:no-repeat;
+  background-position:center;
+  border:0;
+  height:9px;
+  margin:24px 0px;
+}
 
 /* sidebar css */
 #sidebar {
@@ -42,7 +132,7 @@ code {
 }
 
 #sidebar li{
-  background: url(/image/arrow-bullet.gif) no-repeat left top;
+  background: url(../image/arrow-bullet.gif) no-repeat left top;
   padding-left:12px;
 }
 
@@ -56,9 +146,14 @@ code {
 }
 
 .widget {
-  margin-bottom:18px;
+  margin: 8px 0px;
+  padding: 8px 0px;
   overflow:hidden;
   width:100%;
+}
+
+.widget li {
+  font-size: 90%;
 }
 
 h2.widget-title,
@@ -66,6 +161,25 @@ h2.widget-title,
   font-size: 1.16666667em; /* 14 */
   line-height: 1.28571429;
   margin: 0 0 .58333334em 0;
+}
+
+/* about css */
+.about {
+  margin-top: 20px;
+}
+
+/* post css */
+.post-title {
+  margin-top: 20px;
+  color: #51555c;
+}
+
+.post-content ol li {
+  margin-left: 20px;
+}
+
+.post-content p {
+  padding: 10px 0px;
 }
 
 /* timeline css */
