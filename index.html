@@ -1,12 +1,32 @@
-<html>
-<body>
-jiayi<br/>
-99669999996669999996699666699666999966699666699<br/>
-99699999999699999999699666699669966996699666699<br/>
-99669999999999999996699666699699666699699666699<br/>
-99666699999999999966666999966699666699699666699<br/>
-99666666999999996666666699666699666699699666699<br/>
-99666666669999666666666699666669966996699666699<br/>
-99666666666996666666666699666666999966669999996<br/>
-</body>
-</html>
+---
+layout: default
+title: astrophor
+---
+
+{% for post in site.posts %}
+<div class="entry">
+	<h2 class="entry-title">
+        <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+    </h2>
+    <div class="entry-date">
+        {{ post.date | date:'%b <div>%d</div> %Y' | replace:'>0','>' }}
+    </div>
+	<div class="entry-content">
+		{{ post.description }}...
+	    <a href="{{ post.url }}" class="read_more">更多>></a>
+    </div>
+    <p class="alt-font">Post in&nbsp;
+        {% for category in post.categories %}
+        <span>
+            {{ category }}
+        </span>
+        {% endfor %}
+        <a class="comments-link" href='{{post.url}}#disqus_thread'>comments</a>
+    </p>
+    <div class="rule"><br /></div>
+</div>
+{% endfor %}
+
+
+
+
